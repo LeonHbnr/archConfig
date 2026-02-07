@@ -1,0 +1,63 @@
+# ~/.config/alacritty/alacritty.toml
+
+[general]
+# Reload config on save
+live_config_reload = true
+# Example of importing extra snippets or themes
+# import = ["~/.config/alacritty/theme.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+decorations = "Full"
+opacity = 0.9
+padding = { x = 8, y = 8 }
+title = "Alacritty"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+# Pick any installed font; Nerd Font if you want icons
+normal = { family = "FiraCode Nerd Font", style = "Regular" }
+bold = { family = "FiraCode Nerd Font", style = "Bold" }
+italic = { family = "FiraCode Nerd Font", style = "Italic" }
+bold_italic = { family = "FiraCode Nerd Font", style = "Bold Italic" }
+size = 7.0
+
+[colors.primary]
+foreground = "#d8d8d8"
+background = "#282c34"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "#ff6c6b"
+
+[colors.normal]
+black   = "#1c1f24"
+red     = "#ff6c6b"
+green   = "#98be65"
+yellow  = "#ecbe7b"
+blue    = "#51afef"
+magenta = "#c678dd"
+cyan    = "#46d9ff"
+white   = "#dfdfdf"
+
+[colors.bright]
+black   = "#4b5263"
+red     = "#ff6c6b"
+green   = "#98be65"
+yellow  = "#ecbe7b"
+blue    = "#51afef"
+magenta = "#c678dd"
+cyan    = "#46d9ff"
+white   = "#ffffff"
+
+[keyboard]
+bindings = [
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+  { key = "C", mods = "Control|Shift", action = "Copy" }
+]
+
