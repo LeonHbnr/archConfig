@@ -42,6 +42,7 @@ ZSH_THEME="fino"
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
+CORRECT_IGNORE=(tmux)
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -114,4 +115,3 @@ export NVM_DIR="$HOME/.nvm"
 
 autoload -Uz compinit
 compinit
-
